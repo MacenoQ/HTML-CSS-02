@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #cd001e;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+  height: 30vh;
+}
+
+.header-menu {
+  font-size: 3rem;
+}
+.header-logo {
+  font-size: 3rem;
+}
+.header-text {
+  font-size: 1.5rem;
+}
+.header-phone {
+  font-size: 3rem;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+.carousel {
+  overflow: hidden;
+}
+.img-container {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  transition: transform 0.3s linear;
+  transform: translateX(0);
+}
+img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.prev {
+  position: absolute;
+  font-size: 7rem;
+  top: 50vh;
+  left: 3rem;
+  cursor: pointer;
+}
+.next {
+  position: absolute;
+  font-size: 7rem;
+  top: 50vh;
+  right: 3rem;
+  cursor: pointer;
+}
+
+.desc {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: -2rem;
+}
+
+.more-btn {
+  font-size: 1.5rem;
+  margin: 3rem auto;
+  background-color: black;
+  text-align: center;
+  width: 45%;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}

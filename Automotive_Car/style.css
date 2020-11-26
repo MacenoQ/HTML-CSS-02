@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#main {
+  background-image: url('car-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  min-height: 5vh;
+}
+
+#brand-name {
+  font-size: 2.5rem;
+}
+
+#nav-btns {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 3rem;
+}
+
+#nav-btns li {
+  list-style-type: none;
+  padding: 0 1rem;
+  line-height: 3rem;
+}
+
+#nav-btns li a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-appointment {
+  border: none;
+  background-color: #01c2ff;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 90vh;
+  color: white;
+}
+#content-container h1 {
+  font-size: 4rem;
+  padding-left: 1rem;
+  color: #01c2ff;
+}
+
+#content-container h3 {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#content-appointment {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  background-color: #01c2ff;
+  color: white;
+  border: none;
+}
+
+footer {
+  min-height: 10vh;
+  background-color: black;
+  color: white;
+}
+
+#footer-container {
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-title {
+  color: #01c2ff;
+  font-size: large;
+}
+
+@media screen and (max-width: 850px) {
+  #nav-btns {
+    display: block;
+  }
+
+  #nav-appointment {
+    display: none;
+  }
+  #content-container h1 {
+    font-size: 3rem;
+  }
+  #content-container h3 {
+    font-size: 1.5rem;
+  }
+  #content-appointment {
+    font-size: 1.5rem;
+  }
+
+  #footer-container {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .footer-item {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #nav-container,
+  #content-container,
+  #footer-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
+}

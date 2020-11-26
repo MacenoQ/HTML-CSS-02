@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.header-container {
+  display: flex;
+  height: 12vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title {
+  font-size: 2.5rem;
+  color: #0f464b;
+  font-weight: bold;
+}
+.header-phone {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-container {
+  height: 8vh;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+li {
+  border: none;
+  text-align: center;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #0998a8;
+  list-style-type: none;
+}
+li:hover {
+  opacity: 0.8;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.active {
+  background-color: white;
+}
+.active a {
+  color: #0f464b;
+}
+.header-book-btn {
+  background-color: #0f464b;
+}
+.content-container {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.main-btn {
+  padding: 1rem;
+  font-size: 4rem;
+  background-color: #0f464b;
+  color: white;
+}
+
+.book-btn {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: white;
+  color: #0998a8;
+}
+
+.menu-btn {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #0998a8;
+  color: white;
+}
+
+button {
+  border: none;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 978px) {
+  .container {
+    width: 978px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  li {
+    width: 25%;
+  }
+  .header-book-btn {
+    width: 100%;
+  }
+
+  .main-btn {
+    font-size: 3rem;
+  }
+  .book-btn,
+  .menu-btn {
+    font-size: 1.5rem;
+  }
+}
